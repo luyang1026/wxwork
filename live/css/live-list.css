@@ -1,0 +1,74 @@
+body {
+  background-color: #fafafa;
+}
+.live .vip-bar {
+  padding-left: 10%;
+  margin-bottom: 15px;
+  line-height: 38px;
+  height: 38px;
+  background-color: #fff;
+}
+.live .vip-bar .tri-right {
+  margin-right: 15px;
+}
+.live .list-tab {
+  background-color: #fff;
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #ccc;
+}
+.live .list-tab .list-tab-title.active .indicator {
+  display: block;
+}
+.live .list-tab .list-tab-title .indicator {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #cc0001;
+}
+.live .list-tab-holder {
+  background-color: #fff;
+}
+.live .list-tab-holder ul {
+  display: none;
+  margin-bottom: 0;
+}
+.live .list-tab-holder ul.active {
+  display: block;
+}
+.live .list-tab-holder .live-today li,
+.live .list-tab-holder .live-passed li {
+  height: 90px;
+  padding: 10px 5px 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.live .list-tab-holder .live-today li .pic,
+.live .list-tab-holder .live-passed li .pic {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 60px;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 60px;
+}
+.live .list-tab-holder .live-today li .pic img,
+.live .list-tab-holder .live-passed li .pic img {
+  width: 100%;
+  height: 100%;
+}
+.live .list-tab-holder .live-today li .topic,
+.live .list-tab-holder .live-passed li .topic {
+  width: 60%;
+}
+.live .list-tab-holder .live-today li .topic .info,
+.live .list-tab-holder .live-passed li .topic .info {
+  color: #666;
+}
+.live .list-tab-holder .live-today li .topic p,
+.live .list-tab-holder .live-passed li .topic p {
+  margin-bottom: 3px;
+}

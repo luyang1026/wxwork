@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<title>直播列表</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/live-play.css">
+    <script type="text/javascript" charset="utf-8" src="http://yuntv.letv.com/player/live/blive.js"></script>
+    <script src="http://cdn.ronghub.com/RongIMLib-2.1.1.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid live-play">
+		<div class="player-holder" id="player"></div>
+		<div class="row text-center live-tab">
+			<div class="col-xs-6 list-tab-title active">发言
+				<span class="indicator"></span>
+			</div>
+			<div class="col-xs-6 list-tab-title">老师
+				<span class="indicator"></span>
+			</div>
+		</div>
+		<div class="live-tab-contents row">
+			<div class="live-tab-contents-item active">
+				<ul class="posts list-unstyled"></ul>		
+			</div>
+			<div class="live-tab-contents-item">
+				<div class="teacher">
+					<div class="teacher-info clearfix">
+						<div class="pic pull-left">
+							<img src="img/chick.png" alt="">
+						</div>
+						<div class="intro pull-left">
+							<p class="name">老师姓名</p>
+							<p class="feature">教学特点：</p>
+						</div>
+					</div>
+					<h5 class="title">授课班级</h5>
+					<ul class="classes list-unstyled">
+						<li>
+							<p class="name">班级名称</p>
+							<p class="class-id">H123132333</p>
+							<p class="open-time">开课时间：2016-02-11</p>
+							<span class="status">授课中</span>
+						</li>
+						<li>
+							<p class="name">班级名称</p>
+							<p class="class-id">H123132333</p>
+							<p class="open-time">开课时间：2016-02-11</p>
+							<span class="status">授课中</span>
+						</li>
+						<li>
+							<p class="name">班级名称</p>
+							<p class="class-id">H123132333</p>
+							<p class="open-time">开课时间：2016-02-11</p>
+							<span class="status">授课中</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="say-words clearfix">
+			<span class="exp pull-left"></span>
+			<input type="text" class="text pull-left" placeholder="请输入您要说的话" maxlength="200">
+			<button class="send pull-right" id="send">发送</button>
+			<ul class="clearfix emoji list-unstyled">
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[礼物]" src="http://static.gensee.com/webcast/static/emotion/chat.gift.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[愤怒]" src="http://static.gensee.com/webcast/static/emotion/emotion.angerly.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[鄙视]" src="http://static.gensee.com/webcast/static/emotion/emotion.bs.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[伤心]" src="http://static.gensee.com/webcast/static/emotion/emotion.cry.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[再见]" src="http://static.gensee.com/webcast/static/emotion/emotion.goodbye.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[高兴]" src="http://static.gensee.com/webcast/static/emotion/emotion.laugh.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[流汗]" src="http://static.gensee.com/webcast/static/emotion/emotion.lh.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[无聊]" src="http://static.gensee.com/webcast/static/emotion/emotion.nod.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[疑问]" src="http://static.gensee.com/webcast/static/emotion/emotion.question.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[你好]" src="http://static.gensee.com/webcast/static/emotion/emotion.smile.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[反对]" src="http://static.gensee.com/webcast/static/emotion/feedback.against.gif"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[赞同]" src="http://static.gensee.com/webcast/static/emotion/feedback.agreed.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[鼓掌]" src="http://static.gensee.com/webcast/static/emotion/feedback.applaud.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[太快了]" src="http://static.gensee.com/webcast/static/emotion/feedback.quickly.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[太慢了]" src="http://static.gensee.com/webcast/static/emotion/feedback.slowly.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[值得思考]" src="http://static.gensee.com/webcast/static/emotion/feedback.think.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[凋谢]" src="http://static.gensee.com/webcast/static/emotion/rose.down.png"></a>
+			    </li>
+			    <li><a href="javascript:;">
+			        <img class="img-exp" controlee="#edit" alt="[鲜花]" src="http://static.gensee.com/webcast/static/emotion/rose.up.png"></a>
+			    </li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/live-play.js"></script>
+</body>
+</html>
