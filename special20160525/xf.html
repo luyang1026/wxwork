@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		window.onload = window.onresize = function(){
+			var html  = document.getElementsByTagName('html')[0];
+			html.style.fontSize = document.documentElement.clientWidth/27 + 'px';
+
+			//调整模块列表高度
+			var aLi = document.querySelectorAll('.mod-intro-list li');
+			var oHeights = []
+			for (var i = 0; i < aLi.length; i++) {
+				oHeights.push(aLi[i].offsetHeight);
+			}
+			for (var i = 0; i < oHeights.length; i++) {
+				if(i%2){
+					if(oHeights[i]<oHeights[i-1]){
+						oHeights[i] = oHeights[i-1];
+					}
+				}else{
+					if(oHeights[i]<oHeights[i+1]){
+						oHeights[i] = oHeights[i+1];
+					}
+				}
+			}
+			for (var i = 0; i < oHeights.length; i++) {
+				aLi[i].style.height = oHeights[i] + 'px';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<img src="images/header.png" alt="">
+	</div>
+	<div class="modules">
+		<div class="mod-title clearfix">
+			<p class="title-l title-line fl">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+			<h2 class="fl">教学模块</h2>
+			<p class="title-r title-line fr">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+		</div>
+		<div class="mod-intro">
+			<h4 class="text-center mod-intro-title">六大模块各有作用,科学设计相辅相成<span class="b-line"></span></h4>
+			<ul class="mod-intro-list clearfix">
+				<li>
+					<p class="top text-center">精讲<span class="num">1</span></p>
+					<div class="part">
+						<h5 class="p-title">教学内容</h5>
+						<p class="p-conts">根据考试大纲,讲解教材中的基础知识,掌握相关原理及知识点。</p>
+					</div>
+					<div class="part">
+						<h5 class="p-title">教学目标</h5>
+						<p class="p-conts">清晰明了各科考试需要掌握的内容,明确考试复习的方向和重点。</p>
+					</div>
+				</li>
+				<li>
+					<p class="top text-center">精选题解<span class="num">2</span></p>
+					<div class="part">
+						<h5 class="p-title">教学内容</h5>
+						<p class="p-conts">按照考试的要求进行模拟训练并配备答案及解析,供参考查阅。</p>
+					</div>
+					<div class="part">
+						<h5 class="p-title">教学目标</h5>
+						<p class="p-conts">迅速进入考试状态,熟悉考试要求,并通过自我测试进行查缺补漏,突击提分。</p>
+					</div>
+				</li>
+				<li>
+					<p class="top text-center">快班<span class="num">3</span></p>
+					<div class="part">
+						<h5 class="p-title">教学内容</h5>
+						<p class="p-conts">通过圈画及讲解教材中重要考点的范围,帮助考生缩小复习备考的范围。</p>
+					</div>
+					<div class="part">
+						<h5 class="p-title">教学目标</h5>
+						<p class="p-conts">短期内掌握并明晰考试重点,通过快速备考,达到有效提分目的。</p>
+					</div>
+				</li>
+				<li>
+					<p class="top text-center">内部资料<span class="num">4</span></p>
+					<div class="part">
+						<h5 class="p-title">教学内容</h5>
+						<p class="p-conts">考前讲授核心考点和重点习题回应学员所关心问题,并分析预测命题趋势,传授答题技巧</p>
+					</div>
+					<div class="part">
+						<h5 class="p-title">教学目标</h5>
+						<p class="p-conts">强化核心考点,有效提高应试技巧和答题准确率,精确压缩考试范围,确保临考快速提分。</p>
+					</div>
+				</li>
+				<li>
+					<p class="top text-center">密训直播<span class="num">5</span></p>
+					<div class="part">
+						<h5 class="p-title">教学目标</h5>
+						<p class="p-conts">讲授核心考点和重点习题回应学员关心问题,传授答题技巧</p>
+					</div>
+				</li>
+				<li>
+					<p class="top text-center">金题班<span class="num">6</span></p>
+					<div class="part">
+						<h5 class="p-title">教学目标</h5>
+						<p class="p-conts">视频讲解高含金量重点习题,剖析核心考点和备考范围</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="div-01">
+			<p class="query text-center"><a href="http://kefu.qycn.com/vclient/chat/?m=m&websiteid=103053"><span>立即咨询</span</a>></p>
+			<p class="choose text-center"><a href="http://wap.wangxiao.cn/Course/ExamTaocan/cfe"><span>我要选课</span></a></p>
+		</div>
+	</div>
+	<div class="pkg-intro">
+		<div class="pkg-intro-title clearfix">
+			<p class="title-l title-line fl">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+			<h2 class="fl text-center">套餐介绍</h2>
+			<p class="title-r title-line fr">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+		</div>
+		<ul class="pkg-intro-list">
+			<li>
+				<h5 class="title">课后练习</h5>
+				<p class="conts">每章结束后，将提供部分练习题供学员巩固基础。</p>
+			</li>
+			<li>
+				<h5 class="title">在线模考</h5>
+				<p class="conts">智能在线考试题库：提供历年真题、模拟试题、章节练习题、每日一练。边学边做，检验学习效果。同时支持手机端在线考试。</p>
+			</li>
+			<li>
+				<h5 class="title">名师答疑</h5>
+				<p class="conts">学员在学习中通过课堂提问可以随时将问题提交到答疑室上，中大网校资深辅导老师将在线准确回复学员问题。</p>
+			</li>
+			<li>
+				<h5 class="title">课件下载</h5>
+				<p class="conts">个人电脑支持讲义下载，手机端支持视频课件下载手机电脑同步，随时随地上网校。</p>
+			</li>
+		</ul>
+		<div class="pkg-case">
+			<h4 class="pkg-case-title text-center">VIP套餐</h4>
+			<ul class="pkg-case-sub-list clearfix">
+				<li>精讲</li>
+				<li>精选题解</li>
+				<li>快班</li>
+				<li>内部资料</li>
+				<li>密训直播</li>
+			</ul>
+			<p class="extra text">权威师资阵容，五大学习模块，全方位学习提升，适合零基础，自主学习能力较弱的学员</p>
+			<ul class="pkg-case-sub-list clearfix">
+				<li>班主任督学</li>
+			</ul>
+			<p class="text">实行班主任督学制度，设置专门的班主任与学员进行日常沟通，充分调动大家学习的积极性通过直接点对点的沟通方式对学员进行学习方法、答题技巧、应试心理等方面的跟踪辅导。</p>
+			<p class="text im">签署VIP套餐协议， 享受无限次畅学服务直至通过考试为止！</p>
+			<p class="text im">报名VIP套餐免费赠送相应科目【金题班】（价值299元）</p>
+		</div>
+		<div class="register text-center"><a href="http://wap.wangxiao.cn/Course/ExamTaocan/cfe"><span>立即报名</span></a></div>
+		<div class="pkg-case">
+			<h4 class="pkg-case-title text-center">保过套餐</h4>
+			<ul class="pkg-case-sub-list clearfix">
+				<li>精讲</li>
+				<li>快班</li>
+				<li>精选题解</li>
+				<li>密训直播</li>
+			</ul>
+			<p class="text">权威师资阵容，四大学习模块，全方位学习提升，适合基础薄弱，时间较充足的学员</p>
+			<p class="text im">签署保过套餐协议，本期考试不过下期免费学习！</p>
+		</div>
+		<div class="register text-center"><a href="http://wap.wangxiao.cn/Course/ExamTaocan/cfe"><span>立即报名</span></a></div>
+		<div class="pkg-case prime">
+			<h4 class="pkg-case-title text-center">精品套餐</h4>
+			<ul class="pkg-case-sub-list clearfix">
+				<li>精讲</li>
+				<li>精选题解</li>
+			</ul>
+			<p class="text">权威师资阵容，两大学习模块</p>
+			<p class="text">适合基础较好，自主学习能力强的学员</p>
+		</div>
+		<div class="register text-center"><a href="http://wap.wangxiao.cn/Course/ExamTaocan/cfe"><span>立即报名</span></a></div>
+	</div>
+	<div class="teachers">
+		<div class="teachers-title clearfix">
+			<p class="title-l title-line fl">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+			<h2 class="fl text-center">名校老师</h2>
+			<p class="title-r title-line fr">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+		</div>
+		<ul class="teachers-list clearfix">
+			<li>
+				<div class="pic">
+					<img src="images/teacher01.png" alt="">
+				</div>	
+				<p class="name text-center">授课教师：刘东</p>
+				<p class="lesson text-center">主讲：《消防安全技术实务》</p>
+				<p class="info">教授，毕业于某著名高校，曾任长春龙威电子公司研发部经理，从事消防监测系统研究与开发；曾任长春工业大学教授，从事自动化相关专业的教学和科研工作。目前任教于某著名高校老师，从事电气自动化、安全监控系统等相关领域的教学和科研工作。 刘老师教学经验丰富，讲课简洁干练，授课思路清晰，直击考试重难点。</p>
+				
+			</li>
+			<li>
+				<div class="pic">
+					<img src="images/teacher02.png" alt="">
+				</div>	
+				<p class="name text-center">授课教师：刘双跃</p>
+				<p class="lesson text-center">主讲：《消防安全技术综合能力》<br>《消防安全案例分析》</p>
+				<p class="info">北京科技大学教授。毕业于辽宁工程技术大学，并就读于中国矿业大学获得硕士、博士学位。曾在中国矿业大学任教，曾任煤炭科学研究所总工程师，创办长春龙威电子并组织消防安全监测系统研究与开发，曾任省煤矿工业局生产处处长、煤矿安全监察局调度中心主任。现在北京科技大学土木与环境工程学院安全科学与工程系任教。一直从事注册安全工程师的辅导工作，所授科目通过率极高。</p>
+			</li>
+		</ul>
+	</div>
+	<div class="students">
+		<div class="students-title clearfix">
+			<p class="title-l title-line fl">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+			<h2 class="fl text-center">学员心声</h2>
+			<p class="title-r title-line fr">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+		</div>
+		<h4 class="text-center students-intro-title">互动好评，通关成绩铸就中大网校好口碑！<span class="b-line"></span></h4>
+		<ul class="students-list">
+			<li>
+				<p class="name">学员 gc oikle：</p>
+				<p class="comments">感谢网校的老师，感觉自己的知识大增加。<span class="tri-up"></span></p>
+			</li>
+			<li>
+				<p class="name">学员 朱洪晓：</p>
+				<p class="comments">刘老师讲课真不错，重难点讲的很清楚。<span class="tri-up"></span></p>
+			</li>
+			<li>
+				<p class="name">学员 gc liminmin：</p>
+				<p class="comments">试听了两节课，感觉挺适合我的，想报一门。<span class="tri-up"></span></p>
+			</li>
+		</ul>
+	</div>
+	<div class="app-download">
+		<h4 class="apps">下载手机客户端，移动课堂随时看！</h4>
+		<ul class="show-list clearfix">
+			<li>
+				<img src="images/android.png" alt="">
+				<p class="title">新版Android下载 </p>
+				<p class="config">版本：v1.0</p>
+				<p class="config">系统版本：Android 4.0及以上</p>
+				<p class="config">文件大小：13.2MB</p>
+			</li>
+			<li>
+				<img src="images/ios.png" alt="">
+				<p class="title">iOS版下载</p>
+				<p class="config">版本：v2.2</p>
+				<p class="config">系统版本：iOS 6.0以上</p>
+				<p class="config">文件大小：14.22MB</p>
+			</li>
+		</ul>
+		<h4 class="wx">关注微信公众号，最新消息马上知晓！</h4>
+		<ul class="show-list clearfix">
+			<li>
+				<img src="images/wangxiao.png" alt="">
+				<p class="title pl20">中大网校</p>
+			</li>
+			<li>
+				<img src="images/xf.png" alt="">
+				<p class="title pl20">消防工程师</p>
+			</li>
+		</ul>
+	</div>
+	<div class="wangxiao">
+		<div class="wangxiao-title clearfix">
+			<p class="title-l title-line fl">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+			<h2 class="fl">中大网校荣誉墙</h2>
+			<p class="title-r title-line fr">
+				<span class="h"></span>
+				<span class="v"></span>
+			</p>
+		</div>
+		<div class="price-wall">
+			<p class="price-line-one">
+				<img src="images/price_01.png" alt="">
+				<img src="images/price_02.png" alt="">
+				<img src="images/price_03.png" alt="">
+			</p>
+			<p class="price-line-two">
+				<img src="images/price_04.png" alt="">
+				<img src="images/price_05.png" alt="">
+			</p>
+		</div>
+		
+	</div>
+</body>
+</html>
