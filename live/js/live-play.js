@@ -59,6 +59,7 @@ $(function(){
     //发送消息
     $('#send').click(function() {
         Rong.send(input.val());
+        input.val('');
     });
     //发言和老师切换
     var tabBtns = $('.live-tab .list-tab-title');
