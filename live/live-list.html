@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scale=no,initial-scale=1">
+	<title>直播列表</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/live-list.css">
+	<script src="js/zepto.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid live">
+		<div class="row vip-bar clearfix">VIP直播<span class="tri-right pull-right">></span></div>
+		<div class="row text-center list-tab">
+			<div class="col-xs-6 list-tab-title active">今日直播
+				<span class="indicator"></span>
+			</div>
+			<div class="col-xs-6 list-tab-title">直播列表
+				<span class="indicator"></span>
+			</div>
+		</div>
+		<div class="row list-tab-holder">
+			<ul class="live-today list-unstyled active">
+				<li class="clearfix">
+					<div class="pic pull-left">
+						<img src="img/chick.png" alt="">
+					</div>
+					<div class="topic pull-left">
+						<p class="title">课程题目课程题目课程题目课程题目课程题目</p>
+						<p class="info">
+							<small class="teacher">主讲：阿尔法</small>
+							<small class="time">10:00-12:00</small>
+						</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="live-passed list-unstyled">
+				<li class="clearfix">
+					<div class="pic pull-left">
+						<img src="img/chick.png" alt="">
+					</div>
+					<div class="topic pull-left">
+						<p class="title">课程题目课程题目课程题目课程题目课程题目</p>
+						<p class="info">
+							<small class="teacher">主讲：阿尔法</small>
+							<small class="time">10:00-12:00</small>
+						</p>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="pic pull-left">
+						<img src="img/chick.png" alt="">
+					</div>
+					<div class="topic pull-left">
+						<p class="title">课程题目课程题目课程题目课程题目课程题目</p>
+						<p class="info">
+							<small class="teacher">主讲：阿尔法</small>
+							<small class="time">10:00-12:00</small>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			var tabBtns = $('.list-tab .list-tab-title');
+			var tabConts = $('.list-tab-holder ul');
+			tabBtns.click(function(){
+				tabBtns.removeClass('active');
+				$(this).addClass('active');
+				tabConts.hide();
+				tabConts.eq($(this).index()).show();
+			});
+		});
+	</script>
+</body>
+</html>

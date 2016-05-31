@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.text-center {
+  text-align: center;
+}
+img {
+  vertical-align: bottom;
+}
+.header img {
+  width: 100%;
+}
+.modules .mod-title {
+  padding: 2rem 0 1.25rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+.modules .mod-title .title-line {
+  width: 3.8rem;
+  height: 1.5rem;
+}
+.modules .mod-title .title-line.title-l {
+  position: relative;
+  margin-left: 3.5rem;
+}
+.modules .mod-title .title-line.title-l span {
+  position: absolute;
+  background-color: #dadada;
+}
+.modules .mod-title .title-line.title-l .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.modules .mod-title .title-line.title-l .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.modules .mod-title .title-line.title-r {
+  position: relative;
+  margin-right: 3.5rem;
+}
+.modules .mod-title .title-line.title-r span {
+  position: absolute;
+  background-color: #dadada;
+}
+.modules .mod-title .title-line.title-r .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.modules .mod-title .title-line.title-r .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.modules .mod-title h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  padding-left: 2.5rem;
+  margin-top: -3px;
+}
+.modules .mod-intro .mod-intro-title {
+  position: relative;
+  padding: 1rem 0 0.5rem 0;
+}
+.modules .mod-intro .mod-intro-title .b-line {
+  position: absolute;
+  width: 5rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2.5rem;
+  height: 1px;
+  background-color: #dadada;
+}
+.modules .mod-intro .mod-intro-list {
+  padding: 0 0.8rem;
+}
+.modules .mod-intro .mod-intro-list li {
+  border: 1px solid #18194f;
+  border-top: none;
+  width: 11.2rem;
+  margin: 3rem 0 1rem 0;
+}
+.modules .mod-intro .mod-intro-list li:nth-child(2n-1) {
+  float: left;
+}
+.modules .mod-intro .mod-intro-list li:nth-child(2n) {
+  float: right;
+}
+.modules .mod-intro .mod-intro-list li:nth-child(4) {
+  letter-spacing: -1px;
+}
+.modules .mod-intro .mod-intro-list li .top {
+  position: relative;
+  height: 3rem;
+  background-color: #18194f;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.modules .mod-intro .mod-intro-list li .top .num {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 0;
+  top: -1rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #7fdff9;
+}
+.modules .mod-intro .mod-intro-list li .part {
+  border-top: 1px solid #18194f;
+}
+.modules .mod-intro .mod-intro-list li .part .p-title {
+  height: 2rem;
+  background-color: #18194f;
+  line-height: 2rem;
+  color: #fff;
+  font-weight: normal;
+  padding-left: 0.5rem;
+}
+.modules .mod-intro .mod-intro-list li .part .p-conts {
+  line-height: 1.7rem;
+  padding-left: 0.5rem;
+  color: #0f2e3b;
+  font-size: 0.8rem;
+}
+.div-01 {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 2.7rem;
+}
+.query span {
+  display: inline-block;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  width: 11rem;
+  background-color: #18194f;
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+.choose span {
+  display: inline-block;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  width: 11rem;
+  background-color: #e2344d;
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+.pkg-intro {
+  background-color: #fafafa;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 1rem;
+}
+.pkg-intro .pkg-intro-title {
+  margin-bottom: 1.7rem;
+  padding: 2rem 0 1.25rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+.pkg-intro .pkg-intro-title .title-line {
+  width: 3.8rem;
+  height: 1.5rem;
+}
+.pkg-intro .pkg-intro-title .title-line.title-l {
+  position: relative;
+  margin-left: 3.5rem;
+}
+.pkg-intro .pkg-intro-title .title-line.title-l span {
+  position: absolute;
+  background-color: #dadada;
+}
+.pkg-intro .pkg-intro-title .title-line.title-l .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.pkg-intro .pkg-intro-title .title-line.title-l .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.pkg-intro .pkg-intro-title .title-line.title-r {
+  position: relative;
+  margin-right: 3.5rem;
+}
+.pkg-intro .pkg-intro-title .title-line.title-r span {
+  position: absolute;
+  background-color: #dadada;
+}
+.pkg-intro .pkg-intro-title .title-line.title-r .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pkg-intro .pkg-intro-title .title-line.title-r .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.pkg-intro .pkg-intro-title h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  padding-left: 2.5rem;
+  margin-top: -3px;
+}
+.pkg-intro .pkg-intro-list {
+  padding: 0 1rem 1rem 1rem;
+  background-color: #00bff3;
+  color: #fff;
+}
+.pkg-intro .pkg-intro-list li {
+  padding-top: 1rem;
+}
+.pkg-intro .pkg-intro-list li .title {
+  padding-left: 2rem;
+  background: url(../images/check-b.png) 0 center no-repeat;
+  background-size: contain;
+  font-size: 1.2rem;
+}
+.pkg-intro .pkg-intro-list li .conts {
+  padding: 2px 0;
+  font-size: 1rem;
+}
+.pkg-intro .pkg-case {
+  position: relative;
+  width: 94%;
+  margin: 2rem auto 0 auto;
+  border: 1px solid #18194f;
+  background-color: #fff;
+  padding-top: 2rem;
+}
+.pkg-intro .pkg-case.prime {
+  width: 65%;
+}
+.pkg-intro .pkg-case .pkg-case-title {
+  width: 8.5rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  top: -1rem;
+  margin-left: -4.25rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #18194f;
+}
+.pkg-intro .pkg-case .pkg-case-sub-list {
+  padding-left: 0.75rem;
+}
+.pkg-intro .pkg-case .pkg-case-sub-list li {
+  padding-left: 1.5rem;
+  background: url(../images/check-w.png) 0 center no-repeat;
+  background-size: contain;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+.pkg-intro .pkg-case .text {
+  padding: 0 0.75rem;
+  line-height: 1.6;
+  color: #555555;
+  font-size: 0.8rem;
+}
+.pkg-intro .pkg-case .text.extra {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+.pkg-intro .pkg-case .text.im {
+  color: #e2344d;
+  font-weight: 400;
+}
+.register {
+  margin-top: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+.register span {
+  display: inline-block;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  width: 11rem;
+  background-color: #e2344d;
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+.teachers {
+  background-color: #fff;
+}
+.teachers .teachers-title {
+  margin-bottom: 1.7rem;
+  padding: 2rem 0 1.25rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+.teachers .teachers-title .title-line {
+  width: 3.8rem;
+  height: 1.5rem;
+}
+.teachers .teachers-title .title-line.title-l {
+  position: relative;
+  margin-left: 3.5rem;
+}
+.teachers .teachers-title .title-line.title-l span {
+  position: absolute;
+  background-color: #dadada;
+}
+.teachers .teachers-title .title-line.title-l .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.teachers .teachers-title .title-line.title-l .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.teachers .teachers-title .title-line.title-r {
+  position: relative;
+  margin-right: 3.5rem;
+}
+.teachers .teachers-title .title-line.title-r span {
+  position: absolute;
+  background-color: #dadada;
+}
+.teachers .teachers-title .title-line.title-r .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.teachers .teachers-title .title-line.title-r .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.teachers .teachers-title h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  padding-left: 2.5rem;
+  margin-top: -3px;
+}
+.teachers .teachers-list {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3.5rem;
+}
+.teachers .teachers-list li {
+  width: 90%;
+  margin: 0 auto 2.6rem auto;
+  border-width: 0.4rem 1px 1px 1px;
+  border-color: #00bff3;
+  border-style: solid;
+  background-color: #f7f5f6;
+}
+.teachers .teachers-list li .pic {
+  width: 11.2rem;
+  height: 11.2rem;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #00bff3;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+.teachers .teachers-list li .pic img {
+  width: 100%;
+}
+.teachers .teachers-list li p {
+  margin-bottom: 1.5rem;
+  color: #7b7b7b;
+}
+.teachers .teachers-list li p.name {
+  font-size: 1.25rem;
+}
+.teachers .teachers-list li p.lesson {
+  color: #00bff3;
+  font-size: 0.9rem;
+  line-height: 1.6	;
+}
+.teachers .teachers-list li p.info {
+  line-height: 2.2;
+  padding: 0 0.5rem 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+.students .students-title {
+  padding: 2rem 0 1.25rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px dashed #ccc;
+}
+.students .students-title .title-line {
+  width: 3.8rem;
+  height: 1.5rem;
+}
+.students .students-title .title-line.title-l {
+  position: relative;
+  margin-left: 3.5rem;
+}
+.students .students-title .title-line.title-l span {
+  position: absolute;
+  background-color: #dadada;
+}
+.students .students-title .title-line.title-l .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.students .students-title .title-line.title-l .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.students .students-title .title-line.title-r {
+  position: relative;
+  margin-right: 3.5rem;
+}
+.students .students-title .title-line.title-r span {
+  position: absolute;
+  background-color: #dadada;
+}
+.students .students-title .title-line.title-r .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.students .students-title .title-line.title-r .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.students .students-title h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  padding-left: 2.5rem;
+  margin-top: -3px;
+}
+.students .students-intro-title {
+  margin-bottom: 2.2rem;
+  position: relative;
+  padding: 1rem 0 0.5rem 0;
+}
+.students .students-intro-title .b-line {
+  position: absolute;
+  width: 6rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3rem;
+  height: 1px;
+  background-color: #dadada;
+}
+.students .students-list {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.75rem;
+}
+.students .students-list li {
+  padding-left: 1.2rem;
+  background: url(../images/dot.png) no-repeat 5px 5px;
+}
+.students .students-list li p {
+  margin-bottom: 1.5rem;
+}
+.students .students-list li .name {
+  font-size: 1.4rem;
+}
+.students .students-list li .comments {
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 94%;
+  background-color: #fbfafa;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #e3e3e3;
+}
+.students .students-list li .comments .tri-up {
+  position: absolute;
+  width: 0.7rem;
+  height: 0.75rem;
+  left: 50%;
+  top: -0.7rem;
+  margin-left: -0.35rem;
+  background: url(../images/tri-up.png) no-repeat;
+  background-size: 100% 100%;
+}
+.app-download {
+  margin-bottom: 2.25rem;
+  background-color: #000b38;
+}
+.app-download h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 5.2rem;
+}
+.app-download h4.apps {
+  background: url(../images/dot-g.png) no-repeat 1.5rem center, url(../images/apps.png) no-repeat 3rem center;
+  background-size: 5px auto, 1.15rem auto;
+}
+.app-download h4.wx {
+  background: url(../images/dot-g.png) no-repeat 1.5rem center, url(../images/wx.png) no-repeat 2.85rem center;
+  background-size: 5px auto, 1.5rem auto;
+}
+.app-download .show-list {
+  padding-left: 4rem;
+}
+.app-download .show-list li {
+  float: left;
+  width: 10.4rem;
+}
+.app-download .show-list li img {
+  width: 7.5rem;
+  margin-bottom: 0.3rem;
+}
+.app-download .show-list li .title {
+  font-size: 0.9rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  color: #fff;
+}
+.app-download .show-list li .config {
+  color: #5f7584;
+  line-height: 1.2;
+}
+.app-download .show-list li .pl20 {
+  padding-left: 1.25rem;
+}
+.wangxiao .wangxiao-title {
+  padding: 2rem 0 1.25rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+.wangxiao .wangxiao-title .title-line {
+  width: 3.8rem;
+  height: 1.5rem;
+}
+.wangxiao .wangxiao-title .title-line.title-l {
+  position: relative;
+  margin-left: 3.5rem;
+}
+.wangxiao .wangxiao-title .title-line.title-l span {
+  position: absolute;
+  background-color: #dadada;
+}
+.wangxiao .wangxiao-title .title-line.title-l .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.wangxiao .wangxiao-title .title-line.title-l .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.wangxiao .wangxiao-title .title-line.title-r {
+  position: relative;
+  margin-right: 3.5rem;
+}
+.wangxiao .wangxiao-title .title-line.title-r span {
+  position: absolute;
+  background-color: #dadada;
+}
+.wangxiao .wangxiao-title .title-line.title-r .v {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wangxiao .wangxiao-title .title-line.title-r .h {
+  width: 100%;
+  height: 1px;
+  top: 0.5rem;
+  left: 0;
+}
+.wangxiao .wangxiao-title h2 {
+  font-size: 1.35rem;
+  text-align: center;
+  margin-top: -3px;
+  padding-left: 1.4rem;
+}
+.wangxiao .price-wall {
+  padding-bottom: 1.5rem;
+}
+.wangxiao .price-wall .price-line-one {
+  padding: 1.8rem 0.5rem 1.5rem 0.5rem;
+  text-align: justify;
+}
+.wangxiao .price-wall .price-line-one:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+.wangxiao .price-wall .price-line-two {
+  padding: 0 5rem;
+  text-align: justify;
+}
+.wangxiao .price-wall img {
+  width: 7.7rem;
+}
