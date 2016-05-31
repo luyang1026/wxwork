@@ -58,6 +58,7 @@ $(function(){
     });
     //发送消息
     $('#send').click(function() {
+        if(!input.val())return;
         Rong.send(input.val());
         input.val('');
     });
@@ -248,8 +249,7 @@ $(function(){
                       if(!login){
                         Username = '游客'+Username;
                       }
-
-                      onGetMessage(Username,$('.say-words .text').val());
+                      onGetMessage(Username,message.content.content);
                       
                   },
                   onError: function (errorCode,message) {
