@@ -1,0 +1,166 @@
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
+.live-play {
+  height: 100%;
+  position: relative;
+}
+.live-play .player-holder {
+  height: 40%;
+  margin: 0 -15px;
+}
+.live-play .live-tab {
+  background-color: #fff;
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #ccc;
+}
+.live-play .live-tab .list-tab-title {
+  cursor: pointer;
+}
+.live-play .live-tab .list-tab-title.active .indicator {
+  display: block;
+}
+.live-play .live-tab .list-tab-title .indicator {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #cc0001;
+}
+.live-play .live-tab-contents {
+  height: 45%;
+  overflow: hidden;
+}
+.live-play .live-tab-contents .live-tab-contents-item {
+  display: none;
+  height: 100%;
+}
+.live-play .live-tab-contents .live-tab-contents-item.active {
+  display: block;
+}
+.live-play .live-tab-contents .live-tab-contents-item .posts {
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
+}
+.live-play .live-tab-contents .live-tab-contents-item .posts li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.live-play .live-tab-contents .live-tab-contents-item .posts li p {
+  margin-bottom: 5px;
+}
+.live-play .live-tab-contents .live-tab-contents-item .posts li .user img {
+  width: 22px;
+  height: 22px;
+}
+.live-play .live-tab-contents .live-tab-contents-item .posts li .user .name {
+  vertical-align: bottom;
+  margin: 0 5px;
+}
+.live-play .live-tab-contents .live-tab-contents-item .posts li .comments {
+  padding: 0 1em 0 2em;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher {
+  height: 100%;
+  overflow-y: auto;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .teacher-info {
+  padding: 5px 0;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .teacher-info p {
+  margin: 4px 0;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .teacher-info .pic {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .teacher-info .pic img {
+  width: 100%;
+  height: 100%;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .title {
+  padding: 4px 15px;
+  background-color: #fff;
+  color: #cc0001;
+  margin-bottom: 2px;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .classes li {
+  position: relative;
+  background-color: #fff;
+  padding: 4px 15px;
+  margin-bottom: 2px;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .classes li p {
+  margin: 0;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .classes li .open-time {
+  color: #666;
+}
+.live-play .live-tab-contents .live-tab-contents-item .teacher .classes li .status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #cc0001;
+  padding: 5px;
+}
+.live-play .say-words {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  bottom: 5px;
+  left: 0;
+  height: 34px;
+}
+.live-play .say-words .exp {
+  width: 35px;
+  height: 100%;
+  background: url(../img/express.png) no-repeat 2px center;
+}
+.live-play .say-words .text {
+  height: 32px;
+  padding: 7px;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  width: 65%;
+}
+.live-play .say-words .text:focus {
+  outline: none;
+}
+.live-play .say-words .send {
+  height: 100%;
+  width: 60px;
+  line-height: 34px;
+  background-color: #3FCE79;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+.live-play .say-words .emoji {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: -65px;
+  margin: 0;
+  display: none;
+}
+.live-play .say-words .emoji li {
+  cursor: pointer;
+  margin: 3px;
+  float: left;
+}

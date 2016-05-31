@@ -1,0 +1,660 @@
+@grey:#dadada;
+@d-b:#18194f;
+@l-b:#00bff3;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,ol{
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear:both;
+}
+.text-center{
+	text-align: center;
+}
+img{
+	vertical-align: bottom;
+}
+
+//start
+.header{
+	img{
+		width: 100%;
+	}
+}
+
+.modules{
+	.mod-title{
+		padding: 2rem 0 1.25rem 0;
+		border-bottom: 1px dashed #ccc;
+		.title-line{
+			width: 76/20rem;
+			height: 30/20rem;
+			&.title-l{
+				position: relative;
+				margin-left: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					right: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+			&.title-r{
+				position: relative;
+				margin-right: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+		}
+		h2{
+			font-size: 1.75rem;
+			text-align: center;
+			padding-left: 50/20rem;
+			margin-top: -3px;
+		}
+	}
+	.mod-intro{
+		.mod-intro-title{
+			position: relative;
+			padding: 20/20rem 0 10/20rem 0;
+			.b-line{
+				position: absolute;
+				width: 100/20rem;
+				bottom: 0;
+				left: 50%;
+				margin-left: -100/20/2rem;
+				height: 1px;
+				background-color: @grey;
+			}
+		}
+		.mod-intro-list{
+			padding: 0 16/20rem;
+			li{
+				border: 1px solid @d-b;
+				border-top: none;
+				width: 224/20rem;
+				margin:60/20rem 0 20/20rem 0;
+				&:nth-child(2n-1){
+					float: left;
+				}
+				&:nth-child(2n){
+					float: right;
+				}
+				&:nth-child(4){
+					letter-spacing: -1px;
+				}
+				.top{
+					position: relative;
+					height: 60/20rem;
+					background-color: @d-b;
+					font-size: 28/20rem;
+					line-height: 60/20rem;
+					color: #fff;
+					margin-bottom: 15/20rem;
+					.num{
+						position: absolute;
+						width: 40/20rem;
+						height: 40/20rem;
+						left: 0;
+						top: -40/20/2rem;
+						line-height: 40/20rem;
+						border-radius: 50%;
+						background-color: #fff;
+						color: #000;
+						border: 1px solid #7fdff9;
+					}
+				}
+				.part{
+					border-top: 1px solid @d-b;
+					.p-title{
+						height: 40/20rem;
+						background-color: @d-b;
+						line-height: 40/20rem;
+						color: #fff;
+						font-weight: normal;
+						padding-left: 10/20rem;
+					}
+					.p-conts{
+						line-height: 34/20rem;
+						padding-left: 10/20rem;
+						color: #0f2e3b;
+						font-size: 16/20rem;
+					}
+				}			
+			}
+		}
+	}
+
+}
+.div-01{
+	padding: 35/20rem 0;
+	border-bottom: 1px solid @grey;
+	margin-bottom: 54/20rem;
+}
+.query{
+	span{
+		display: inline-block;
+		height: 46/20rem;
+		line-height: 46/20rem;
+		width: 220/20rem;
+		background-color: @d-b;
+		color: #fff;
+		font-size: 26/20rem;
+		font-style: italic;
+		margin-bottom: 16/20rem;
+	}
+}
+.choose{
+	span{
+		display: inline-block;
+		height: 46/20rem;
+		line-height: 46/20rem;
+		width: 220/20rem;
+		background-color: #e2344d;
+		color: #fff;
+		font-size: 26/20rem;
+		font-style: italic;
+	}
+}
+
+.pkg-intro{
+	background-color: #fafafa;
+	border-top: 1px solid @grey;
+	border-bottom: 1px solid #dedede;
+	padding-bottom: 20/20rem;
+	.pkg-intro-title{
+		margin-bottom: 34/20rem;
+		padding: 2rem 0 1.25rem 0;
+		border-bottom: 1px dashed #ccc;
+		.title-line{
+			width: 76/20rem;
+			height: 30/20rem;
+			&.title-l{
+				position: relative;
+				margin-left: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					right: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+			&.title-r{
+				position: relative;
+				margin-right: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+		}
+		h2{
+			font-size: 1.75rem;
+			text-align: center;
+			padding-left: 50/20rem;
+			margin-top: -3px;
+		}
+	}
+	.pkg-intro-list{
+		padding: 0 20/20rem 20/20rem 1rem;
+		background-color: @l-b;
+		color: #fff;
+		li{
+			padding-top: 20/20rem;
+			.title{
+				padding-left: 40/20rem;
+				background: url(../images/check-b.png) 0 center no-repeat;
+				background-size: contain;
+				font-size: 24/20rem;
+			}
+			.conts{
+				padding: 2px 0;
+				font-size: 20/20rem;
+			}
+		}
+	}
+	.pkg-case{
+		position: relative;
+		&.prime{
+			width: 65%;
+		}
+		width: 94%;
+		margin: 40/20rem auto 0 auto;
+		border: 1px solid #18194f;
+		background-color: #fff;
+		padding-top: 40/20rem;
+		.pkg-case-title{
+			width: 170/20rem;
+			height: 40/20rem;
+			position: absolute;
+			left: 50%;
+			top: -40/20/2rem;
+			margin-left: -170/20/2rem;
+			line-height: 40/20rem;
+			font-size: 22/20rem;
+			color: #fff;
+			background-color: @d-b;
+		}
+		.pkg-case-sub-list{
+			padding-left: 15/20rem;
+			li{
+				padding-left: 30/20rem;
+				background: url(../images/check-w.png) 0 center no-repeat;
+				background-size: contain;
+				float: left;
+				margin-right: 20/20rem;
+				margin-bottom: 30/20rem;
+			}
+		}
+		.text{
+			&.extra{
+				border-bottom: 1px solid #ccc;
+				margin-bottom: 15/20rem;
+				padding-bottom: 10/20rem;
+			}
+			&.im{
+				color: #e2344d;
+				font-weight: 400;
+			}
+			padding:0 15/20rem;
+			line-height: 1.6;
+			color: #555555;
+			font-size: 16/20rem;
+		}
+	}
+}
+.register{
+	margin-top: 34/20rem;
+	padding-bottom: 10/20rem;
+	span{
+		display: inline-block;
+		height: 46/20rem;
+		line-height: 46/20rem;
+		width: 220/20rem;
+		background-color: #e2344d;
+		color: #fff;
+		font-size: 26/20rem;
+		font-style: italic;
+	}
+}
+.teachers{
+	background-color: #fff;
+	.teachers-title{
+		margin-bottom: 34/20rem;
+		padding: 2rem 0 1.25rem 0;
+		border-bottom: 1px dashed #ccc;
+		.title-line{
+			width: 76/20rem;
+			height: 30/20rem;
+			&.title-l{
+				position: relative;
+				margin-left: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					right: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+			&.title-r{
+				position: relative;
+				margin-right: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+		}
+		h2{
+			font-size: 1.75rem;
+			text-align: center;
+			padding-left: 50/20rem;
+			margin-top: -3px;
+		}
+	}
+	.teachers-list{
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 70/20rem;
+		li{
+			width: 90%;
+			margin: 0 auto 52/20rem auto;
+			border-width: 8/20rem 1px 1px 1px;
+			border-color: @l-b;
+			border-style: solid;
+			background-color: #f7f5f6;
+			.pic{
+				width: 224/20rem;
+				height: 224/20rem;
+				border-radius: 50%;
+				padding: 5px;
+				border: 1px solid @l-b;
+				overflow: hidden;
+				margin: 1rem auto;
+				img{
+					width: 100%;
+				}
+			}
+			p{
+				margin-bottom: 30/20rem;
+				color: #7b7b7b;
+				&.name{
+					font-size: 25/20rem;
+				}
+				&.lesson{
+					color: @l-b;
+					font-size: 18/20rem;
+					line-height: 1.6	;
+				}
+				&.info{
+					line-height: 2.2;
+					padding: 0 10/20rem 10/20rem 20/20rem;
+					font-size: 16/20rem;
+				}
+			}
+		}
+	}
+}
+.students{
+	.students-title{
+		padding: 2rem 0 1.25rem 0;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px dashed #ccc;
+		.title-line{
+			width: 76/20rem;
+			height: 30/20rem;
+			&.title-l{
+				position: relative;
+				margin-left: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					right: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+			&.title-r{
+				position: relative;
+				margin-right: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+		}
+		h2{
+			font-size: 1.75rem;
+			text-align: center;
+			padding-left: 50/20rem;
+			margin-top: -3px;
+		}
+	}
+	.students-intro-title{
+		margin-bottom: 44/20rem;
+		position: relative;
+		padding: 20/20rem 0 10/20rem 0;
+		.b-line{
+			position: absolute;
+			width: 120/20rem;
+			bottom: 0;
+			left: 50%;
+			margin-left: -120/20/2rem;
+			height: 1px;
+			background-color: @grey;
+		}
+	}
+	.students-list{
+		padding-bottom: 10/20rem;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 35/20rem;
+		li{
+			padding-left: 24/20rem;
+			background: url(../images/dot.png) no-repeat 5px 5px;
+			p{
+				margin-bottom: 30/20rem;
+			}
+			.name{
+				font-size: 28/20rem;
+			}
+			.comments{
+				font-size: 16/20rem;
+				padding: 20/20rem;
+				width: 94%;
+				background-color: #fbfafa;
+				border-radius: 5px;
+				position: relative;
+				border: 1px solid #e3e3e3;
+				.tri-up{
+					position: absolute;
+					width: 14/20rem;
+					height: 15/20rem;
+					left: 50%;
+					top: -14/20rem;
+					margin-left: -14/20/2rem;
+					background: url(../images/tri-up.png) no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+		}
+	}
+}
+.app-download{
+	margin-bottom: 45/20rem;
+	background-color: #000b38;
+	h4{
+		font-size: 24/20rem;
+		color: #fff;
+		height: 80/20rem;
+		line-height: 80/20rem;
+		padding-left: 104/20rem;
+		&.apps{
+			background: url(../images/dot-g.png) no-repeat 30/20rem center,url(../images/apps.png) no-repeat 60/20rem center;
+			background-size: 5px auto,23/20rem auto;
+		}
+		&.wx{
+			background: url(../images/dot-g.png) no-repeat 30/20rem center,url(../images/wx.png) no-repeat 57/20rem center;
+			background-size: 5px auto,30/20rem auto;
+		}
+	}
+	.show-list{
+		padding-left: 80/20rem;
+		li{
+			float: left;
+			width: 208/20rem;
+			img{
+				width: 150/20rem;
+				margin-bottom: 6/20rem;
+			}
+			.title{
+				font-size: 18/20rem;
+				height: 36/20rem;
+				line-height: 36/20rem;
+				color:#fff;
+			}
+			.config{
+				color: #5f7584;
+				line-height: 1.2;
+			}
+			.pl20{
+				padding-left: 25/20rem;
+			}
+		}
+	}
+}
+.wangxiao{
+	.wangxiao-title{
+		padding: 2rem 0 1.25rem 0;
+		border-bottom: 1px dashed #ccc;
+		.title-line{
+			width: 76/20rem;
+			height: 30/20rem;
+			&.title-l{
+				position: relative;
+				margin-left: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					right: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+			&.title-r{
+				position: relative;
+				margin-right: 70/20rem;
+				span{
+					position: absolute;
+					background-color: #dadada;
+				}
+				.v{
+					width: 1px;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+				.h{
+					width: 100%;
+					height: 1px;
+					top: 10/20rem;
+					left: 0;
+				}
+			}
+		}
+		h2{
+			font-size: 1.35rem;
+			text-align: center;
+			margin-top: -3px;
+			padding-left: 1.4rem;
+		}
+	}
+	.price-wall{
+		padding-bottom: 30/20rem;
+		.price-line-one{
+			&:after{
+				content: '';
+				width: 100%;
+				display: inline-block;
+			}
+			padding:36/20rem 10/20rem 30/20rem 10/20rem ;
+			text-align:justify;
+			
+		}
+		.price-line-two{
+			padding: 0 100/20rem;
+			text-align: justify;
+		}
+		img{
+			width: 154/20rem;
+		}
+	}
+}
