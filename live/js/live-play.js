@@ -247,10 +247,9 @@ $(function(){
                       //message 为发送的消息对象并且包含服务器返回的消息唯一Id和发送消息时间戳
                       console.log("Send successfully");
                       if(!login){
-                        Username = '游客'+Username;
+                        var temp = '游客'+Username;
                       }
-                      onGetMessage(Username,message.content.content);
-                      
+                      onGetMessage(temp,message.content.content);
                   },
                   onError: function (errorCode,message) {
                       var info = '';
